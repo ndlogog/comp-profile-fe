@@ -25,6 +25,22 @@ const router = createRouter({
       component: () => import('../views/categories/CategoryEdit.vue'),
       props: true,
     },
+    {
+      path: '/posts',
+      name: 'PostIndex',
+      component: () => import('../views/posts/PostIndex.vue'),
+    },
+    {
+      path: '/posts/create',
+      name: 'PostCreate',
+      component: () => import('../views/posts/PostCreate.vue'),
+    },
+    {
+      path: '/posts/:id/edit',
+      name: 'PostEdit',
+      component: () => import('../views/posts/PostEdit.vue'),
+      props: true,
+    }
   ]
 })
 

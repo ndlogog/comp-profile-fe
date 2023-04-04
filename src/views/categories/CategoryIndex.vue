@@ -1,6 +1,6 @@
 <script setup>
   import useCategories from '../../composables/categories';
-import useCategory from '../../composables/categories';
+  import useCategory from '../../composables/categories';
   import { onMounted } from 'vue';
 
   const { categories, getCategories, destroyCategory } = useCategories();
