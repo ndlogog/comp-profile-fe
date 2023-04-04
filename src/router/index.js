@@ -40,7 +40,24 @@ const router = createRouter({
       name: 'PostEdit',
       component: () => import('../views/posts/PostEdit.vue'),
       props: true,
+    },
+    {
+      path: '/static-pages',
+      name: 'StaticPageIndex',
+      component: () => import('../views/static-pages/StaticPageIndex.vue'),
+    },
+    {
+      path: '/static-pages/create',
+      name: 'StaticPageCreate',
+      component: () => import('../views/static-pages/StaticPageCreate.vue'),
+    },
+    {
+      path: '/static-pages/:id/edit',
+      name: 'StaticPageEdit',
+      component: () => import('../views/static-pages/StaticPageEdit.vue'),
+      props: true,
     }
+
   ]
 })
 
